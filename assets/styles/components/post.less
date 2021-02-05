@@ -1,3 +1,7 @@
+@import "../_core/colors";
+@import "../_core/base";
+@import "../_core/idea";
+
 .post-detail {
   flex: 1;
 
@@ -66,15 +70,13 @@
       p,
       li {
         code {
-          padding: 0 2px;
-          border: 1px solid rgba(0, 0, 0, .08);
-          border-radius: 2px 2px;
-          background-color: rgba(0, 0, 0, .06);
-          text-indent: 0;
-          word-wrap: break-word;
-          font-size: inherit;
-          font-family: monospace;
-          line-height: initial;
+          padding: 0 3px;
+          margin: 0 2px;
+          font-size: 0.9em;
+          border-radius: 2px;
+          border: 1px solid;
+          display: inline-block;
+          line-height: 1.5;
         }
       }
 
@@ -82,11 +84,22 @@
         margin-bottom: 24px;
 
         code {
-          padding: 1em;
-          border-radius: 5px;
-          font-size: 16px;
+          font-size: 14px;
           font-family: 'Source Code Pro', Consolas, Menlo, Monaco, 'Courier New', monospace;
+          padding: 2em 1em 1em;
+          border-radius: 5px;
           line-height: 1.375;
+          position: relative;
+          display: block;
+          &:after {
+            content: 'CODE';
+            display: block;
+            position: absolute;
+            left: 8px;
+            top: 4px;
+            font-size: 14px;
+            font-weight: bold;
+          }
         }
       }
 

@@ -1,8 +1,8 @@
 {
     "name": "Lemon",
     "version": "1.0.0",
-    "author": "虾哔哔",
-    "repository": "https://github.com/Mrcxt/gridea-theme-lemon",
+    "author": "炼金术师",
+    "repository": "https://github.com/General-Tullius/gridea-theme-lemon",
     "customConfig": [{
             "name": "github",
             "label": "Github",

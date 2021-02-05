@@ -25,17 +25,11 @@
                         <a href="<%= post.link %>" class="post-feature-image" style="background-image:url(<%= post.feature %>) ">
                         </a>
                         <% } %>
-                            <div class="post-content">
-                                <% if (post.abstract) {%>
-                                    <div class="post-content-abstract">
-                                        <%- post.abstract %>
-                                    </div>
-                                    <%}else{ %>
-                                        <div class="post-content-content">
-                                            <%= post.content.replace(/<[^>]+>/g,"") %>
-                                        </div>
-                                        <%} %>
-                                            <a class="btn btn-text" href="<%= post.link %>">Read More ~</a>
+                            <div class="post-content">                                
+                                <div class="post-content-abstract">
+                                    <%- post.abstract %>
+                                </div>                                    
+                                <a class="btn btn-text" href="<%= post.link %>">Read More ~</a>
                             </div>
                 </div>
             </article>
