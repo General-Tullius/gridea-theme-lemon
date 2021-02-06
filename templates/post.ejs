@@ -4,8 +4,8 @@
     <%- include('./includes/head', { siteTitle: `${post.title} | ${themeConfig.siteName}` }) %>
         <% if (typeof commentSetting !== 'undefined' && commentSetting.showComment) { %>
             <% if (commentSetting.commentPlatform === 'gitalk') { %>
-                <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gitalk/gitalk/dist/gitalk.css">
-                <script src="https://cdn.jsdelivr.net/gh/gitalk/gitalk/dist/gitalk.min.js"></script>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/General-Tullius/gitalk/dist/gitalk.css">
+                <script src="https://cdn.jsdelivr.net/gh/General-Tullius/gitalk/dist/gitalk.min.js"></script>
                 <% } %>
 
                     <% if (commentSetting.commentPlatform === 'disqus') { %>
