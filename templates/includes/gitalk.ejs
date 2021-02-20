@@ -1,6 +1,7 @@
 <script>
     window.onload = function() {
         var gitalk = new Gitalk({
+            proxy: '<%= site.customConfig.gitalkProxy %>',
             clientID: '<%= commentSetting.gitalkSetting.clientId %>',
             clientSecret: '<%= commentSetting.gitalkSetting.clientSecret %>',
             repo: '<%= commentSetting.gitalkSetting.repository %>',
